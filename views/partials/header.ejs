@@ -1,0 +1,48 @@
+<header class="header">
+    <a href="/" class="header__logo">NodeJS</a>
+
+    <nav class="header__nav">
+        <ul>
+            <li>
+                <a href="/" class="<%= isActiveRoute('/', currentRoute) %>"
+                    >Home</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/about"
+                    class="<%= isActiveRoute('/about', currentRoute) %>"
+                    >About</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/contact"
+                    class="<%= isActiveRoute('/contact', currentRoute) %>"
+                    >Contact</a
+                >
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header__button">
+        <button class="searchBtn" aria-expanded="false">
+            Search
+            <svg
+                class="feather feather-search"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" x2="16.65" y1="21" y2="16.65" />
+            </svg>
+        </button>
+    </div>
+</header>
